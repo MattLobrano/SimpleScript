@@ -1,0 +1,35 @@
+{
+  "name": "simplescript",
+  "displayName": "SimpleScript",
+  "description": "Full-featured SimpleScript extension with icon, syntax highlighting, autocompletion, and hover tooltips",
+  "version": "0.1.0",
+  "publisher": "yourname",
+  "main": "./hover.js",
+  "engines": { "vscode": "^1.80.0" },
+  "activationEvents": [
+    "onLanguage:simplescript"
+  ],
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "simplescript",
+        "extensions": [".ss"],
+        "aliases": ["SimpleScript"]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "simplescript",
+        "scopeName": "source.simplescript",
+        "path": "./syntaxes/simplescript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "simplescript",
+        "path": "./snippets/simplescript.json"
+      }
+    ]
+  }
+}

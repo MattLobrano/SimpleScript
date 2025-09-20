@@ -1,0 +1,14 @@
+{
+  "scopeName": "source.simplescript",
+  "name": "SimpleScript",
+  "patterns": [
+    { "match": "\\b(temp\\.mem;|perm\\.mem;|temporary\\.memory;|permanent\\.memory;)\\b", "name": "keyword.declaration.simplescript" },
+    { "match": "\\bend\\b", "name": "keyword.end.simplescript" },
+    { "match": "\\bshow\\b", "name": "keyword.show.simplescript" },
+    { "match": "\\bpopup\\b|\\balert\\b", "name": "keyword.popup.simplescript" },
+    { "match": "\\bif\\b|\\bthen\\b", "name": "keyword.control.simplescript" },
+    { "match": "\\brepeat\\b|\\btimes\\b", "name": "keyword.loop.simplescript" },
+    { "match": "\".*?\"", "name": "string.quoted.double.simplescript" },
+    { "match": "\\b\\d+\\b", "name": "constant.numeric.simplescript" }
+  ]
+}

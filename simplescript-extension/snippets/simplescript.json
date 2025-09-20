@@ -1,0 +1,32 @@
+{
+  "Temporary Variable": {
+    "prefix": "temp",
+    "body": ["temp.mem;${1:varName} = ${2:value} end"],
+    "description": "Create a temporary variable"
+  },
+  "Permanent Variable": {
+    "prefix": "perm",
+    "body": ["perm.mem;${1:varName} = ${2:value} end"],
+    "description": "Create a permanent variable"
+  },
+  "Show Statement": {
+    "prefix": "show",
+    "body": ["show ${1:expression}"],
+    "description": "Show output"
+  },
+  "Popup": {
+    "prefix": "popup",
+    "body": ["popup ${1:message}"],
+    "description": "Show popup alert"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": ["if ${1:condition} then", "\t$0", "end"],
+    "description": "If statement"
+  },
+  "Repeat Loop": {
+    "prefix": "repeat",
+    "body": ["repeat ${1:count} times", "\t$0", "end"],
+    "description": "Repeat loop"
+  }
+}
